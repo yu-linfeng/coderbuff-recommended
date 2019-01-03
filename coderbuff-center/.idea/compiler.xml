@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="coderbuff-common" />
+        <module name="coderbuff-dao" />
+        <module name="coderbuff-sdk" />
+        <module name="coderbuff-service" />
+        <module name="coderbuff-sync" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coderbuff-common" target="1.5" />
+      <module name="coderbuffcommon" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
