@@ -4,23 +4,45 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 继承父包 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath></relativePath>
+    </parent>
+
     <groupId>com.coderbuff</groupId>
     <artifactId>coderbuff-center</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>coderbuff-common</module>
-        <module>coderbuff-common</module>
         <module>coderbuff-dao</module>
         <module>coderbuff-sdk</module>
         <module>coderbuff-service</module>
         <module>coderbuff-sync</module>
+        <module>coderbuff-config</module>
     </modules>
     <properties>
         <coderbuff.sdk.version>1.0-SNAPSHOT</coderbuff.sdk.version>
         <lombok.version>1.16.10</lombok.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
