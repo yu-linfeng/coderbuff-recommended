@@ -11,5 +11,12 @@
 
     <artifactId>coderbuff-dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.coderbuff</groupId>
+            <artifactId>coderbuff-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

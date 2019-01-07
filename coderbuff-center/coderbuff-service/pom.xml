@@ -17,5 +17,10 @@
             <artifactId>coderbuff-sdk</artifactId>
             <version>${coderbuff.sdk.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.coderbuff</groupId>
+            <artifactId>coderbuff-dao</artifactId>
+            <version>${coderbuff.sdk.version}</version>
+        </dependency>
     </dependencies>
 </project>
